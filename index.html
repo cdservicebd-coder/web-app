@@ -29,24 +29,25 @@
 }
         #login-screen { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background:#FAFAFA; z-index: 2000; display: flex; flex-direction: column; justify-content: center; align-items: center; }
         #login-screen input { padding: 12px; margin: 8px; width: 80%; border: 1px solid #ccc; border-radius: 5px; }
-        .bottom-nav { position: fixed; bottom: 0; left: 0; width: 100%; height: 50px; color: white; background-color:#034587; display: flex; justify-content: space-around; align-items: center; border-top: 1px solid #ddd; z-index: 1000; }
+        .bottom-nav { position: fixed; bottom: 0; left: 0;  border-radius: 5px; width: 100%; height: 50px; color: white; background-color:#034587; display: flex; justify-content: space-around; align-items: center; border-top: 1px solid #ddd; z-index: 1000; }
         .nav-item { text-align: center; font-size: 15px; cursor: pointer; padding: 5px; }
         .dot {
     display: none;
-    height: 10px;
-    width: 10px;
+    height: 11px;
+    width: 11px;
     background-color: red;
     border-radius: 50%;
     display: inline-block;
     position: absolute;
     top: 5px;
-    right: 48%;
+    right: 46%;
 	z-index: 500;
 }
 .rounded-img {
     border-radius: 5px;
 
 }
+
     </style>
     <script>
         // ইন্টারনেট সংযোগ পরীক্ষা
@@ -66,10 +67,10 @@
 <body>
 
     <div id="login-screen">
-      <img src="https://i.postimg.cc/HsFq06kn/1000013989-Photoroom.png" alt="Logo" style="height: 90px; width: auto; ">
-        <h3>MED Bridge Academy</h3>
+      <img src="https://i.postimg.cc/HsFq06kn/1000013989-Photoroom.png" alt="Logo" style="height: 150px; width: auto; ">
+        <h2>MED Bridge Academy</h2>
         <input type="text" id="userid" placeholder="User ID">
-        <button class="paper-btn" style="background-color: #000000; width: 100px; color: white;" onclick="saveData()">Log in</button>
+        <button class="paper-btn" style="background-color: #0A94E8; width: 100px; color: white;" onclick="saveData()">Log in</button>
     </div>
     
    <div id="home"  class="sub-page">
@@ -108,7 +109,7 @@
                <img src="https://i.postimg.cc/W1y82KGG/Medical-Logo.jpg" width="90" height="90" alt="Logo" class="rounded-img"><br>
                Medical</button><br><br>
 
-        </div>
+        </div><br><hr>
         <div align="bottom">
     <p>MED Bridge Academy <br> Contact: +8801612296263</p>
 </div>
@@ -720,7 +721,7 @@
     <button class="paper-btn" onclick="show('eng1-t6')">Rearrange</button>
     </div>
 
-     </div>
+  </div>
     <div id="eng-2nd" class="sub-page">
     <button class="paper-btn" style="background-color: #E3E3E3; color: white;" onclick="show('english')">← Back</button>
     <h3>English 2nd paper</h3>
@@ -737,51 +738,52 @@
     <button class="paper-btn" onclick="show('eng1-t11')">Synonym or Atnonym</button>
     <button class="paper-btn" onclick="show('eng1-t12')">Punctuation marks</button>
     <button class="paper-btn" onclick="show('eng1-t13')">Writting Part</button>
+  </div>
  <!-- ICT PART -->
     <div id="ict" class="sub-page">
         <button class="paper-btn" style="background-color: #E3E3E3; color: white;" onclick="show('home')">← Back</button>
         <h3>ICT</h3>
-        <button class="paper-btn" onclick="show('ICT-1')">Chapter 1</button>
-        <button class="paper-btn" onclick="show('ICT-2')">Chapter 2</button>
-        <button class="paper-btn" onclick="show('ICT-3')">Chapter 3</button>
-        <button class="paper-btn" onclick="show('ICT-4')">Chapter 4</button>
-        <button class="paper-btn" onclick="show('ICT-5')">Chapter 5</button>
-        <button class="paper-btn" onclick="show('ICT-6')">Chapter 6</button>
+        <button class="paper-btn" onclick="show('ict-1')">Chapter 1</button>
+        <button class="paper-btn" onclick="show('ict-2')">Chapter 2</button>
+        <button class="paper-btn" onclick="show('ict-3')">Chapter 3</button>
+        <button class="paper-btn" onclick="show('ict-4')">Chapter 4</button>
+        <button class="paper-btn" onclick="show('ict-5')">Chapter 5</button>
+        <button class="paper-btn" onclick="show('ict-6')">Chapter 6</button>
     </div>
-    <div id="ICT-1" class="sub-page">
+    <div id="ict-1" class="sub-page">
         <button class="paper-btn" style="background-color: #E3E3E3; color: white;" onclick="show('ict')">← Back</button>
         <h3>Chapter 1</h3>
        <a href="https://drive.google.com/drive/folders/14onFXVfzLtD7h1qLpVrxH7xJRMbj6vH7?usp=drive_link" target="_blank" class="paper-btn" style="text-decoration: none; display: block; text-align: center;">Content & Class</a>
     </div>
-    <div id="ICT-2" class="sub-page">
+    <div id="ict-2" class="sub-page">
         <button class="paper-btn" style="background-color: #E3E3E3; color: white;" onclick="show('ict')">← Back</button>
         <h3>Chapter 2</h3>
        <a href="https://drive.google.com/drive/folders/1YpaefPYP0w0TGTiPres27-0Z4T71Cdh1?usp=drive_link" target="_blank" class="paper-btn" style="text-decoration: none; display: block; text-align: center;">Content & Class</a>
-    </div><div id="ICT-3" class="sub-page">
+    </div><div id="ict-3" class="sub-page">
         <button class="paper-btn" style="background-color: #E3E3E3; color: white;" onclick="show('ict')">← Back</button>
         <h3>Chapter 3</h3>
        <a href="https://drive.google.com/drive/folders/1x8nrdR2W2Zdmo8BYg2ga4I0Wrz2kytKG?usp=drive_link" target="_blank" class="paper-btn" style="text-decoration: none; display: block; text-align: center;">Content & Class</a>
-    </div><div id="ICT-4" class="sub-page">
+    </div><div id="ict-4" class="sub-page">
         <button class="paper-btn" style="background-color: #E3E3E3; color: white;" onclick="show('ict')">← Back</button>
         <h3>Chapter 4</h3>
        <a href="https://drive.google.com/drive/folders/1_2-tV05Om4ESgiU0z3akXNOOyHlW1AsT?usp=drive_link" target="_blank" class="paper-btn" style="text-decoration: none; display: block; text-align: center;">Content & Class</a>
-    </div><div id="ICT-5" class="sub-page">
+    </div><div id="ict-5" class="sub-page">
         <button class="paper-btn" style="background-color: #E3E3E3; color: white;" onclick="show('ict')">← Back</button>
         <h3>Chapter 5</h3>
        <a href="https://drive.google.com/drive/folders/19LLMuFaUBUV6I8rAP_JttDErrrRUg6VE?usp=drive_link" target="_blank" class="paper-btn" style="text-decoration: none; display: block; text-align: center;">Content & Class</a>
-    </div><div id="ICT-6" class="sub-page">
+    </div><div id="ict-6" class="sub-page">
         <button class="paper-btn" style="background-color: #E3E3E3; color: white;" onclick="show('ict')">← Back</button>
         <h3>Chapter 6</h3>
        <a href="https://drive.google.com/drive/folders/1dPwYmmgU11wmLC8mP6vDLGx91eHF3Ei_?usp=drive_link" target="_blank" class="paper-btn" style="text-decoration: none; display: block; text-align: center;">Content & Class</a>
     </div>
 
 
-    </div>
+   
 
 <!-- মেডিকেল সেকশন -->
 
 <div id="med-ad" class="sub-page">
-    <button onclick="show('home')">← Back</button>
+    <button class="paper-btn" style="background-color: #E3E3E3; color: white;"  onclick="show('home')">← Back</button>
     <h3>Medical Admission</h3>
     <button class="paper-btn" onclick="show('med-phy')">Physics</button>
     <button class="paper-btn" onclick="show('med-chem')">Chemistry</button>
@@ -790,7 +792,7 @@
     <button class="paper-btn" onclick="show('med-gk')">General Knowledge</button>
 </div>
 <div id="med-gk" class="sub-page">
-        <button onclick="show('med-ad')">← Back</button>
+        <button class="paper-btn" style="background-color: #E3E3E3; color: white;"  onclick="show('med-ad')">← Back</button>
         <h3>General Knowledge</h3>
        <a href="https://drive.google.com/drive/folders/1ury2jCxAztJwVpku-a6e3CNMd-M-tgSi?usp=drive_link" target="_blank" class="paper-btn" style="text-decoration: none; display: block; text-align: center;">Content & Class</a>
     </div>
@@ -832,24 +834,23 @@
 <div class="bottom-nav">
     <div class="nav-item" onclick="show('home')"><span>🏠</span><br>Home</div>
     
-<div class="nav-item" onclick="openNotice()">
+  <div class="nav-item" onclick="openNotice()">
     <span id="notice-dot" style="display:none;" class="dot"></span>
     <span>🔔</span><br>Notice
-</div>
-<div class="nav-item" onclick="show('profile')"><span>👤</span><br>Profile</div>
+  </div>
+  <div class="nav-item" onclick="show('profile')"><span>👤</span><br>Profile</div>
 </div>
 
 
 <script>
+// ১. পেজ রিফ্রেশ বা নতুন এন্ট্রি চেক করে লগইন ম্যানেজ করা
 document.addEventListener("DOMContentLoaded", function() {
-    // চেক করা পেজটি রিফ্রেশ হয়েছে নাকি নতুন করে খোলা হয়েছে
     var isReload = performance.getEntriesByType("navigation")[0]?.type === 'reload';
 
     if (!isReload) {
-        // নতুন করে ফাইলে ঢুকলে লগইন মুছে যাবে
-        localStorage.clear();
+        localStorage.clear(); // নতুন করে অ্যাপে ঢুকলে লগইন মুছে যাবে
     } else if (localStorage.getItem("isLoggedIn") === "true") {
-        // রিফ্রেশ করলে লগইন বহাল থাকবে
+        // পেজ রিফ্রেশ হলে লগইন তথ্য বহাল রাখা
         document.getElementById('displayname').innerText = localStorage.getItem("userName") || "";
         document.getElementById('displayid').innerText = localStorage.getItem("userId") || "";
         document.getElementById('displaybatch').innerText = localStorage.getItem("userBatch") || "";
@@ -860,77 +861,96 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
-    // ১. ইন্টারনেট চেক ফাংশন
-    function checkInternetConnection() {
-        if (!navigator.onLine) {
-            alert("ইন্টারনেট সংযোগ নেই!");
-            return false;
+// ২. ইন্টারনেট সংযোগ আছে কিনা তা চেক করার ফাংশন
+function checkInternetConnection() {
+    if (!navigator.onLine) {
+        alert("ইন্টারনেট সংযোগ নেই!");
+        return false;
+    }
+    return true;
+}
+
+// ৩. পেজ লোড হওয়ার পর লগইন অবস্থা যাচাই ও নোটিশ লোড করা
+window.onload = function() {
+    if (localStorage.getItem("isLoggedIn") === "true") {
+        document.getElementById('displayid').innerText = localStorage.getItem("userId") || "";
+        document.getElementById('login-screen').style.display = 'none';
+        document.getElementById('home').style.display = 'block';
+    }
+    if (checkInternetConnection()) {
+        loadNotice();
+    }
+};
+
+let pageHistory = ['home'];
+
+function show(pageId, isBack = false) {
+    if (!checkInternetConnection()) return;
+
+    // যে মেইন পেজ বা বাটনগুলো সবার জন্য সবসময় উন্মুক্ত থাকবে
+    let openPages = [
+        'home', 'notice', 'profile',  'bangla',
+        'chemistry', 'physics', 'biology', 'math', 'ict',
+        'physics-1st', 'physics-2nd', 
+        'chemistry-1st', 'chemistry-2nd',
+        'biology-1st', 'biology-2nd',
+        'math-1st', 'math-2nd' , 'med-ad'
+    ];
+
+    // যদি পেজটি উন্মুক্ত তালিকার বাইরে (অর্থাৎ চ্যাপ্টার) হয়, তবেই গিটহাবের পারমিশন চেক করবে
+    if (!openPages.includes(pageId)) {
+        let allowed = JSON.parse(sessionStorage.getItem("userAllowedChapters") || "[]");
+        
+        if (!allowed.includes("all") && !allowed.includes(pageId)) {
+            alert("এই কন্টেন্টের জন্য প্রযোজ্য নয়");
+            return; // চ্যাপ্টার ওপেন হবে না
         }
-        return true;
     }
 
-    // ২. পেজ লোড ও লগইন চেক
-    window.onload = function() {
-        if (sessionStorage.getItem("isLoggedIn") === "true") {
-            document.getElementById('displayid').innerText = sessionStorage.getItem("userId");
-            document.getElementById('login-screen').style.display = 'none';
-            document.getElementById('home').style.display = 'block';
+    document.querySelectorAll('.sub-page').forEach(div => div.style.display = 'none');
+    document.getElementById(pageId).style.display = 'block';
+    localStorage.setItem('currentActivePage', pageId);
+
+    if (!isBack) {
+        if (pageHistory[pageHistory.length - 1] !== pageId) {
+            pageHistory.push(pageId);
         }
-        if (checkInternetConnection()) {
-            loadNotice();
-        }
-    };
-
-    // ৩. নেভিগেশন ও হিস্ট্রি ম্যানেজমেন্ট (একক ও সঠিক ফাংশন)
-    let pageHistory = ['home'];
-
-    function show(pageId, isBack = false) {
-        if (!checkInternetConnection()) return;
-
-        document.querySelectorAll('.sub-page').forEach(div => div.style.display = 'none');
-        document.getElementById(pageId).style.display = 'block';
-        localStorage.setItem('currentActivePage', pageId);
-
-        if (!isBack) {
-            if (pageHistory[pageHistory.length - 1] !== pageId) {
-                pageHistory.push(pageId);
-            }
-            history.pushState({page: pageId}, "");
-        }
+        history.pushState({page: pageId}, "");
     }
-
-    // ফোনের ব্যাক বাটন কন্ট্রোল
-    window.addEventListener('popstate', function(event) {
-        if (pageHistory.length > 1) {
-            pageHistory.pop();
-            let prevPage = pageHistory[pageHistory.length - 1];
-            show(prevPage, true);
-        }
-    });
-
-    // ৪. নোটিশ লোড
-    async function loadNotice() {
-        var noticeUrl = "https://raw.githubusercontent.com/cdservicebd-coder/Notice-Bar-/main/Notice-MED?t=" + new Date().getTime();
-        try {
-            let response = await fetch(noticeUrl);
-            let text = await response.text();
-            let noticeText = text.trim();
-            document.getElementById('notice-content').innerText = noticeText;
-            
-            let lastSeen = localStorage.getItem("lastSeenNotice");
-            document.getElementById('notice-dot').style.display = (lastSeen !== noticeText) ? 'inline-block' : 'none';
-        } catch (e) { console.log("Error loading notice"); }
+}
+// ৫. ফোনের ব্যাক বাটন কন্ট্রোল করার ইভেন্ট
+window.addEventListener('popstate', function(event) {
+    if (pageHistory.length > 1) {
+        pageHistory.pop();
+        let prevPage = pageHistory[pageHistory.length - 1];
+        show(prevPage, true);
     }
+});
 
-    // ৫. নোটিশ বাটন
-    function openNotice() {
-        document.getElementById('notice-dot').style.display = 'none';
-        var currentText = document.getElementById('notice-content').innerText;
-        localStorage.setItem("lastSeenNotice", currentText);
-        show('notice');
-    }
+// ৬. নোটিশ লোড করার ফাংশন
+async function loadNotice() {
+    var noticeUrl = "https://raw.githubusercontent.com/cdservicebd-coder/Notice-Bar-/main/Notice-MED?t=" + new Date().getTime();
+    try {
+        let response = await fetch(noticeUrl);
+        let text = await response.text();
+        let noticeText = text.trim();
+        document.getElementById('notice-content').innerText = noticeText;
+        
+        let lastSeen = localStorage.getItem("lastSeenNotice");
+        document.getElementById('notice-dot').style.display = (lastSeen !== noticeText) ? 'inline-block' : 'none';
+    } catch (e) { console.log("Error loading notice"); }
+}
 
-   async function saveData() {
+// ৭. নোটিশ বাটন ওপেন করার ফাংশন
+function openNotice() {
+    document.getElementById('notice-dot').style.display = 'none';
+    var currentText = document.getElementById('notice-content').innerText;
+    localStorage.setItem("lastSeenNotice", currentText);
+    show('notice');
+}
+
+// ৮. লগইন ও GitHub থেকে ইউজারের ডেটা ও চ্যাপ্টার পারমিশন ভেরিফিকেশন ফাংশন
+async function saveData() {
     if (!checkInternetConnection()) return;
 
     var idInput = document.getElementById('userid').value.trim().toLowerCase();
@@ -946,6 +966,7 @@ document.addEventListener("DOMContentLoaded", function() {
         var matchedBatch = ""; 
         var matchedCollege = "";
         var matchedResult = "";
+        var allowedChapters = [];
 
         for (var i = 0; i < lines.length; i++) {
             var line = lines[i].trim();
@@ -953,7 +974,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
             var parts = line.split(',').map(item => item.trim());
             
-            if (parts.length >= 5) {
+            if (parts.length >= 6) {
                 var fileDataId = parts[0].toLowerCase();
 
                 if (fileDataId === idInput) {
@@ -962,6 +983,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     matchedBatch = parts[2];
                     matchedCollege = parts[3];
                     matchedResult = parts[4];
+                    allowedChapters = parts.slice(5); // চ্যাপ্টার পারমিশনগুলো আলাদা করা
                     break;
                 }
             }
@@ -969,11 +991,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if (isValid) {
             localStorage.setItem("isLoggedIn", "true");
-localStorage.setItem("userName", matchedName);
-localStorage.setItem("userId", idInput);
-localStorage.setItem("userBatch", matchedBatch);
-localStorage.setItem("userCollege", matchedCollege);
-localStorage.setItem("userResult", matchedResult);
+            localStorage.setItem("userName", matchedName);
+            localStorage.setItem("userId", idInput);
+            localStorage.setItem("userBatch", matchedBatch);
+            localStorage.setItem("userCollege", matchedCollege);
+            localStorage.setItem("userResult", matchedResult);
+            sessionStorage.setItem("userAllowedChapters", JSON.stringify(allowedChapters));
 
             document.getElementById('displayname').innerText = matchedName;
             document.getElementById('displayid').innerText = idInput;
@@ -991,7 +1014,8 @@ localStorage.setItem("userResult", matchedResult);
         alert("ইন্টারনেট সমস্যা!");
     }
 }
-   // ড্রাইভ ও এক্সটার্নাল লিংক অ্যাপের বাইরে ওপেন করার কোড
+
+// ৯. ড্রাইভ বা এক্সটার্নাল লিংকগুলো অ্যাপের বাইরে ব্রাউজারে ওপেন করার কোড
 document.addEventListener("DOMContentLoaded", function() {
     var buttons = document.querySelectorAll('button');
     
@@ -1004,21 +1028,23 @@ document.addEventListener("DOMContentLoaded", function() {
                 var url = urlMatch[1];
                 btn.removeAttribute('onclick');
                 btn.onclick = function() {
-                    // '_blank' ব্যবহারের ফলে এটি অ্যাপের ভেতরে না খুলে বাইরের অ্যাপ বা ব্রাউজারে ওপেন হবে
                     window.open(url, '_blank');
                 };
             }
         }
     });
 });
+
+// ১০. লগআউট করার ফাংশন
 function logout() {
     sessionStorage.clear();
-    localStorage.clear(); // আগের সব লোকাল ডেটা মুছে ফেলতে হবে
-    location.reload();      // পেজ রিফ্রেশ করে একদম ফ্রেশ লগইন স্ক্রিনে রাখবে
+    localStorage.clear();
+    location.reload();
 }
+var loginScreen = document.getElementById('login-screen');
+var homeScreen = document.getElementById('home');
 
 </script>
-
 
 </body>
 </html>
